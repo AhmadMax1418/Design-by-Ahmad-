@@ -16,6 +16,26 @@
             color: #333;
             margin: 0;
             padding: 0;
+            display: flex;
+        }
+        /* قائمة جانبية على اليسار */
+        .side-menu {
+            width: 250px;
+            background-color: #222;
+            color: white;
+            padding-top: 20px;
+            position: fixed;
+            height: 100vh;
+        }
+        .side-menu a {
+            color: white;
+            padding: 10px;
+            text-decoration: none;
+            display: block;
+            font-size: 18px;
+        }
+        .side-menu a:hover {
+            background-color: #444;
         }
         header {
             background-image: url('https://raw.githubusercontent.com/AhmadMax1418/Design-by-Ahmad-/main/1738103292308.jpg');
@@ -24,12 +44,18 @@
             text-align: center;
             padding: 60px 0;
             background-position: center;
+            flex-grow: 1;
         }
         header h1 {
             font-size: 50px;
             font-weight: bold;
             color: black;
             font-family: 'Rock Salt', cursive; /* الخط المرسوم */
+            line-height: 1.5;
+        }
+        header h1 span {
+            display: block;
+            font-size: 35px;
         }
         .header-logo {
             position: absolute;
@@ -37,8 +63,8 @@
             left: 20px;
         }
         .header-logo img {
-            width: 100px; /* تكبير حجم اللوجو */
-            height: 100px;
+            width: 75px; /* تصغير حجم اللوجو */
+            height: 75px;
         }
         .container {
             width: 80%;
@@ -49,6 +75,7 @@
             display: flex;
             justify-content: space-between;
             gap: 20px;
+            flex-wrap: wrap;
         }
         .service-item {
             width: 23%;
@@ -116,9 +143,17 @@
 </head>
 <body>
 
+    <!-- قائمة جانبية -->
+    <div class="side-menu">
+        <a href="#">الرابط 1</a>
+        <a href="#">الرابط 2</a>
+        <a href="#">الرابط 3</a>
+        <a href="#">الرابط 4</a>
+    </div>
+
     <!-- العنوان الرئيسي -->
     <header>
-        <h1>هنا كل ما تحتاجه لتصميمات احترافية تحت سقف واحد</h1>
+        <h1>كل ما تحتاجه لتصميمات <span>احترافية تحت سقف واحد</span></h1>
     </header>
 
     <!-- صورة اللوجو في أعلى يسار الصفحة -->
@@ -131,21 +166,21 @@
         <!-- تصميم السوشيال ميديا -->
         <div class="service-items">
             <div class="service-item">
-                <img src="https://raw.githubusercontent.com/AhmadMax1418/Design-by-Ahmad-/main/Leonardo_Phoenix_10_A_dynamic_and_engaging_social_media_post_b_2.jpg" alt="تصميم السوشيال ميديا">
+                <img src="https://raw.githubusercontent.com/AhmadMax1418/Design-by-Ahmad-/main/Leonardo_Phoenix_10_A_slender_crystalcut_perfume_bottle_with_a_1.jpg" alt="تصميم السوشيال ميديا">
                 <h3>تصميم السوشيال ميديا</h3>
                 <p>تصميمات مبتكرة وجذابة تزيد من تفاعل الجمهور وتبني هويتك على وسائل التواصل الاجتماعي. تشمل بوستات، إعلانات، وقصص ملهمة تناسب كل منصة.</p>
             </div>
 
             <!-- تصميم الشعارات والهوية البصرية -->
             <div class="service-item">
-                <img src="https://raw.githubusercontent.com/AhmadMax1418/Design-by-Ahmad-/main/Leonardo_Phoenix_10_A_refined_branding_board_showcasing_a_mode_1.jpg" alt="تصميم الشعارات والهوية البصرية">
+                <img src="https://raw.githubusercontent.com/AhmadMax1418/Design-by-Ahmad-/main/Leonardo_Phoenix_10_A_dynamic_and_engaging_social_media_post_b_2.jpg" alt="تصميم الشعارات والهوية البصرية">
                 <h3>تصميم الشعارات والهوية البصرية</h3>
                 <p>نحول أفكارك إلى شعارات فريدة وهوية بصرية متكاملة تعكس رؤية علامتك التجارية وتترك انطباعًا دائمًا لدى العملاء.</p>
             </div>
 
             <!-- تصميم المنتجات والتعبئة والتغليف -->
             <div class="service-item">
-                <img src="https://raw.githubusercontent.com/AhmadMax1418/Design-by-Ahmad-/main/Leonardo_Phoenix_10_A_slender_crystalcut_perfume_bottle_with_a_1.jpg" alt="تصميم المنتجات والتعبئة والتغليف">
+                <img src="https://raw.githubusercontent.com/AhmadMax1418/Design-by-Ahmad-/main/Leonardo_Phoenix_10_A_refined_branding_board_showcasing_a_mode_1.jpg" alt="تصميم المنتجات والتعبئة والتغليف">
                 <h3>تصميم المنتجات والتعبئة والتغليف</h3>
                 <p>تصاميم عصرية للتعبئة والتغليف تسلط الضوء على منتجك وتجعله مميزًا على الأرفف. نركز على دمج الجمال والوظائف العملية.</p>
             </div>
