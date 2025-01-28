@@ -1,12 +1,42 @@
 <!DOCTYPE html>
 <html lang="ar">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Design by Ahmad</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>موقع تصميمات احترافية</title>
 </head>
 <body>
+  <header>
     <h1>مرحبًا بك في موقعي!</h1>
     <p>هنا كل ما تحتاجه لتصميمات احترافية تحت سقف واحد.</p>
+  </header>
+  
+  <section>
+    <h2>خدماتنا</h2>
+    <div class="services">
+      <div class="service">
+        <h3>تصميم السوشيال ميديا</h3>
+        <p>نقدم لك تصميمات جذابة لصفحاتك على وسائل التواصل الاجتماعي.</p>
+      </div>
+      <div class="service">
+        <h3>تصميم الشعارات</h3>
+        <p>نصمم لك شعارات فريدة تعكس هوية عملك.</p>
+      </div>
+      <!-- هنا يمكنك إضافة المزيد من الخدمات -->
+    </div>
+  </section>
+  
+  <footer>
+    <p>تواصل معنا عبر النموذج أدناه:</p>
+    <form action="#" method="POST">
+      <label for="name">الاسم:</label>
+      <input type="text" id="name" name="name" required><br><br>
+      <label for="phone">رقم الهاتف:</label>
+      <input type="text" id="phone" name="phone" required><br><br>
+      <label for="project">نبذة عن المشروع:</label><br>
+      <textarea id="project" name="project" rows="4" required></textarea><br><br>
+      <button type="submit">إرسال</button>
+    </form>
+  </footer>
 </body>
 </html>
