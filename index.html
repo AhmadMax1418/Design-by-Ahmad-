@@ -1,42 +1,87 @@
 <!DOCTYPE html>
 <html lang="ar">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>موقع تصميمات احترافية</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>موقع تصميمات احترافية</title>
+    <!-- هنا لو عايز تضيف الأيقونة للموقع -->
+    <link rel="icon" type="image/jpeg" href="https://github.com/AhmadMax1418/Design-by-Ahmad-/blob/main/Leonardo_Phoenix_10_A_modern_bold_logo_that_showcases_a_graphi_0.jpg?raw=true">
 </head>
 <body>
-  <header>
-    <h1>مرحبًا بك في موقعي!</h1>
-    <p>هنا كل ما تحتاجه لتصميمات احترافية تحت سقف واحد.</p>
-  </header>
-  
-  <section>
-    <h2>خدماتنا</h2>
-    <div class="services">
-      <div class="service">
-        <h3>تصميم السوشيال ميديا</h3>
-        <p>نقدم لك تصميمات جذابة لصفحاتك على وسائل التواصل الاجتماعي.</p>
-      </div>
-      <div class="service">
-        <h3>تصميم الشعارات</h3>
-        <p>نصمم لك شعارات فريدة تعكس هوية عملك.</p>
-      </div>
-      <!-- هنا يمكنك إضافة المزيد من الخدمات -->
+
+    <!-- القسم الخاص بالصور الأربعة -->
+    <div class="services-container">
+        <div class="service">
+            <img src="https://github.com/AhmadMax1418/Design-by-Ahmad-/blob/main/Leonardo_Phoenix_10_A_dynamic_and_engaging_social_media_post_b_2.jpg?raw=true" alt="تصميم السوشيال ميديا">
+            <h3>تصميم السوشيال ميديا</h3>
+            <p>تصميمات مبتكرة وجذابة تزيد من تفاعل الجمهور وتبني هويتك على وسائل التواصل الاجتماعي. تشمل بوستات، إعلانات، وقصص ملهمة تناسب كل منصة.</p>
+        </div>
+        <div class="service">
+            <img src="رابط الصورة 2" alt="خدمة 2">
+            <h3>خدمة 2</h3>
+            <p>تفاصيل الخدمة 2.</p>
+        </div>
+        <div class="service">
+            <img src="رابط الصورة 3" alt="خدمة 3">
+            <h3>خدمة 3</h3>
+            <p>تفاصيل الخدمة 3.</p>
+        </div>
+        <div class="service">
+            <img src="رابط الصورة 4" alt="خدمة 4">
+            <h3>خدمة 4</h3>
+            <p>تفاصيل الخدمة 4.</p>
+        </div>
     </div>
-  </section>
-  
-  <footer>
-    <p>تواصل معنا عبر النموذج أدناه:</p>
-    <form action="#" method="POST">
-      <label for="name">الاسم:</label>
-      <input type="text" id="name" name="name" required><br><br>
-      <label for="phone">رقم الهاتف:</label>
-      <input type="text" id="phone" name="phone" required><br><br>
-      <label for="project">نبذة عن المشروع:</label><br>
-      <textarea id="project" name="project" rows="4" required></textarea><br><br>
-      <button type="submit">إرسال</button>
-    </form>
-  </footer>
+
+    <!-- قسم النهاية أو التعليقات -->
+    <footer>
+        <p>كل الحقوق محفوظة</p>
+    </footer>
+
+    <!-- هنا الأكواد الخاصة بتنسيق الـ CSS -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            direction: rtl;
+            margin: 0;
+            padding: 0;
+        }
+
+        .services-container {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            margin-top: 20px;
+            padding: 20px;
+        }
+
+        .service {
+            text-align: center;
+            width: 22%;
+        }
+
+        .service img {
+            width: 100%;
+            max-width: 250px;
+            height: auto;
+            transition: transform 0.3s ease;
+            border-radius: 8px;
+        }
+
+        .service img:hover {
+            transform: scale(1.1);
+        }
+
+        .service h3 {
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .service p {
+            margin-top: 5px;
+            font-size: 14px;
+        }
+    </style>
+
 </body>
 </html>
