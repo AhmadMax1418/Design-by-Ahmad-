@@ -6,6 +6,8 @@
     <title>موقع التصميمات الاحترافية</title>
     <!-- إضافة أيقونة الموقع -->
     <link rel="icon" href="https://raw.githubusercontent.com/AhmadMax1418/Design-by-Ahmad-/main/Leonardo_Phoenix_10_A_modern_bold_logo_that_showcases_a_graphi_0.jpg" type="image/x-icon">
+    <!-- إضافة خط Brush من جوجل -->
+    <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet">
     <style>
         /* تنسيقات CSS */
         body {
@@ -24,13 +26,19 @@
             background-position: center;
         }
         header h1 {
-            font-size: 40px;
+            font-size: 50px;
             font-weight: bold;
+            color: black;
+            font-family: 'Rock Salt', cursive; /* الخط المرسوم */
         }
         .header-logo {
             position: absolute;
             top: 20px;
             left: 20px;
+        }
+        .header-logo img {
+            width: 100px; /* تكبير حجم اللوجو */
+            height: 100px;
         }
         .container {
             width: 80%;
@@ -68,6 +76,42 @@
             font-size: 14px;
             color: #555;
         }
+
+        /* نموذج الاتصال */
+        .contact-form {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 40px;
+        }
+        .contact-form h2 {
+            text-align: center;
+            font-size: 28px;
+            color: #333;
+            font-weight: bold;
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+        .contact-form button {
+            width: 100%;
+            padding: 12px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .contact-form button:hover {
+            background-color: #0056b3;
+        }
     </style>
 </head>
 <body>
@@ -79,7 +123,7 @@
 
     <!-- صورة اللوجو في أعلى يسار الصفحة -->
     <div class="header-logo">
-        <img src="https://raw.githubusercontent.com/AhmadMax1418/Design-by-Ahmad-/main/Leonardo_Phoenix_10_A_modern_bold_logo_that_showcases_a_graphi_0.jpg" alt="Logo" style="width: 50px; height: 50px;">
+        <img src="https://raw.githubusercontent.com/AhmadMax1418/Design-by-Ahmad-/main/Leonardo_Phoenix_10_A_modern_bold_logo_that_showcases_a_graphi_0.jpg" alt="Logo">
     </div>
 
     <!-- المحتوى الرئيسي داخل حاوية لتوسيط العناصر -->
@@ -87,31 +131,43 @@
         <!-- تصميم السوشيال ميديا -->
         <div class="service-items">
             <div class="service-item">
-                <img src="https://raw.githubusercontent.com/AhmadMax1418/Design-by-Ahmad-/main/Leonardo_Phoenix_10_A_dynamic_and_engaging_social_media_post_b_2.jpg" alt="تصميم السوشيال ميديا" class="service-image">
+                <img src="https://raw.githubusercontent.com/AhmadMax1418/Design-by-Ahmad-/main/Leonardo_Phoenix_10_A_dynamic_and_engaging_social_media_post_b_2.jpg" alt="تصميم السوشيال ميديا">
                 <h3>تصميم السوشيال ميديا</h3>
                 <p>تصميمات مبتكرة وجذابة تزيد من تفاعل الجمهور وتبني هويتك على وسائل التواصل الاجتماعي. تشمل بوستات، إعلانات، وقصص ملهمة تناسب كل منصة.</p>
             </div>
 
             <!-- تصميم الشعارات والهوية البصرية -->
             <div class="service-item">
-                <img src="https://raw.githubusercontent.com/AhmadMax1418/Design-by-Ahmad-/main/Leonardo_Phoenix_10_A_refined_branding_board_showcasing_a_mode_1.jpg" alt="تصميم الشعارات والهوية البصرية" class="service-image">
+                <img src="https://raw.githubusercontent.com/AhmadMax1418/Design-by-Ahmad-/main/Leonardo_Phoenix_10_A_refined_branding_board_showcasing_a_mode_1.jpg" alt="تصميم الشعارات والهوية البصرية">
                 <h3>تصميم الشعارات والهوية البصرية</h3>
                 <p>نحول أفكارك إلى شعارات فريدة وهوية بصرية متكاملة تعكس رؤية علامتك التجارية وتترك انطباعًا دائمًا لدى العملاء.</p>
             </div>
 
             <!-- تصميم المنتجات والتعبئة والتغليف -->
             <div class="service-item">
-                <img src="https://raw.githubusercontent.com/AhmadMax1418/Design-by-Ahmad-/main/Leonardo_Phoenix_10_A_slender_crystalcut_perfume_bottle_with_a_1.jpg" alt="تصميم المنتجات والتعبئة والتغليف" class="service-image">
+                <img src="https://raw.githubusercontent.com/AhmadMax1418/Design-by-Ahmad-/main/Leonardo_Phoenix_10_A_slender_crystalcut_perfume_bottle_with_a_1.jpg" alt="تصميم المنتجات والتعبئة والتغليف">
                 <h3>تصميم المنتجات والتعبئة والتغليف</h3>
                 <p>تصاميم عصرية للتعبئة والتغليف تسلط الضوء على منتجك وتجعله مميزًا على الأرفف. نركز على دمج الجمال والوظائف العملية.</p>
             </div>
 
             <!-- تصميم الإعلانات والبنرات -->
             <div class="service-item">
-                <img src="https://raw.githubusercontent.com/AhmadMax1418/Design-by-Ahmad-/main/Leonardo_Phoenix_10_A_sleek_eyecatching_banner_advertisement_s_0.jpg" alt="تصميم الإعلانات والبنرات" class="service-image">
+                <img src="https://raw.githubusercontent.com/AhmadMax1418/Design-by-Ahmad-/main/Leonardo_Phoenix_10_A_sleek_eyecatching_banner_advertisement_s_0.jpg" alt="تصميم الإعلانات والبنرات">
                 <h3>تصميم الإعلانات والبنرات</h3>
                 <p>تصميمات إعلانية مبهرة تلفت انتباه جمهورك وتوصل رسالتك بكل وضوح. تشمل بانرات المواقع، الإعلانات المطبوعة، والدعائية الرقمية.</p>
             </div>
+        </div>
+
+        <!-- نموذج الاتصال -->
+        <div class="contact-form">
+            <h2>نموذج الاتصال</h2>
+            <form action="#" method="POST">
+                <input type="text" name="name" placeholder="الاسم الكامل" required>
+                <input type="email" name="email" placeholder="البريد الإلكتروني" required>
+                <input type="tel" name="phone" placeholder="رقم الهاتف" required>
+                <textarea name="message" placeholder="رسالتك" rows="5" required></textarea>
+                <button type="submit">إرسال</button>
+            </form>
         </div>
     </div>
 
