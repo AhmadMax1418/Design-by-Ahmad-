@@ -5,9 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>موقع التصميمات الاحترافية</title>
     <!-- إضافة أيقونة الموقع -->
-    <link rel="icon" href="https://raw.githubusercontent.com/AhmadMax1418/Design-by-Ahmad-/main/Leonardo_Phoenix_10_A_modern_bold_logo_that_showcases_a_graphi_0.jpg" type="image/x-icon">
-    <!-- إضافة خط Brush من جوجل -->
-    <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet">
+    <link rel="icon" href="https://github.com/AhmadMax1418/Design-by-Ahmad-/blob/main/Leonardo_Phoenix_10_A_modern_bold_logo_that_showcases_a_graphi_0.jpg" type="image/x-icon">
     <style>
         /* تنسيقات CSS */
         body {
@@ -16,193 +14,135 @@
             color: #333;
             margin: 0;
             padding: 0;
-            display: flex;
-        }
-        /* قائمة جانبية على اليسار */
-        .side-menu {
-            width: 250px;
-            background-color: #222;
-            color: white;
-            padding-top: 20px;
-            position: fixed;
-            height: 100vh;
-        }
-        .side-menu a {
-            color: white;
-            padding: 10px;
-            text-decoration: none;
-            display: block;
-            font-size: 18px;
-        }
-        .side-menu a:hover {
-            background-color: #444;
         }
         header {
-            background-image: url('https://raw.githubusercontent.com/AhmadMax1418/Design-by-Ahmad-/main/1738103292308.jpg');
+            background-image: url('https://github.com/AhmadMax1418/Design-by-Ahmad-/blob/main/1738103292308.jpg'); /* خلفية العنوان */
             background-size: cover;
+            background-position: center;
             color: white;
             text-align: center;
-            padding: 60px 0;
-            background-position: center;
-            flex-grow: 1;
+            padding: 100px 0;
         }
         header h1 {
-            font-size: 50px;
-            font-weight: bold;
-            color: black;
-            font-family: 'Rock Salt', cursive; /* الخط المرسوم */
-            line-height: 1.5;
-        }
-        header h1 span {
-            display: block;
-            font-size: 35px;
+            font-size: 40px;
+            font-weight: bold; /* لجعل النص تقيل */
+            margin: 0;
         }
         .header-logo {
             position: absolute;
             top: 20px;
             left: 20px;
-        }
-        .header-logo img {
-            width: 75px; /* تصغير حجم اللوجو */
-            height: 75px;
+            width: 35px; /* تقليل حجم اللوجو */
+            height: 35px;
         }
         .container {
             width: 80%;
             margin: 0 auto;
             padding: 20px 0;
         }
-        .service-items {
+        .services {
             display: flex;
             justify-content: space-between;
-            gap: 20px;
             flex-wrap: wrap;
+            margin-top: 50px;
         }
         .service-item {
             width: 23%;
-            background-color: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             text-align: center;
-            transition: transform 0.3s ease;
+            margin-bottom: 30px;
         }
         .service-item img {
             width: 100%;
             height: auto;
-            transition: transform 0.3s ease;
+            transition: transform 0.3s;
         }
         .service-item img:hover {
-            transform: scale(1.1);
+            transform: scale(1.05);
         }
         .service-item h3 {
             font-size: 20px;
-            margin: 15px 0;
             font-weight: bold;
+            margin-top: 10px;
         }
         .service-item p {
             font-size: 14px;
-            color: #555;
+            margin-top: 10px;
         }
-
-        /* نموذج الاتصال */
-        .contact-form {
+        .list-container {
+            display: none; /* مخفية في البداية */
+            position: absolute;
+            top: 70px;
+            left: 20px;
             background-color: #fff;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            margin-top: 40px;
-        }
-        .contact-form h2 {
-            text-align: center;
-            font-size: 28px;
-            color: #333;
-            font-weight: bold;
-        }
-        .contact-form input, .contact-form textarea {
-            width: 100%;
+            border: 1px solid #ccc;
             padding: 10px;
-            margin: 10px 0;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            font-size: 14px;
         }
-        .contact-form button {
-            width: 100%;
-            padding: 12px;
-            background-color: #007bff;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            font-size: 16px;
-            cursor: pointer;
+        .header-logo:hover + .list-container {
+            display: block; /* تظهر عند مرور الماوس */
         }
-        .contact-form button:hover {
-            background-color: #0056b3;
+        .list-container a {
+            display: block;
+            text-decoration: none;
+            padding: 5px;
+            color: #333;
+        }
+        .list-container a:hover {
+            background-color: #f4f4f4;
         }
     </style>
 </head>
 <body>
 
-    <!-- قائمة جانبية -->
-    <div class="side-menu">
-        <a href="#">الرابط 1</a>
-        <a href="#">الرابط 2</a>
-        <a href="#">الرابط 3</a>
-        <a href="#">الرابط 4</a>
-    </div>
-
-    <!-- العنوان الرئيسي -->
+    <!-- العنوان الرئيسي مع الخلفية -->
     <header>
-        <h1>كل ما تحتاجه لتصميمات <span>احترافية تحت سقف واحد</span></h1>
+        <h1>كل ما تحتاجة لتصميمات <br>احترافية تحت سقف واحد</h1>
     </header>
 
     <!-- صورة اللوجو في أعلى يسار الصفحة -->
     <div class="header-logo">
-        <img src="https://raw.githubusercontent.com/AhmadMax1418/Design-by-Ahmad-/main/Leonardo_Phoenix_10_A_modern_bold_logo_that_showcases_a_graphi_0.jpg" alt="Logo">
+        <img src="https://github.com/AhmadMax1418/Design-by-Ahmad-/blob/main/Leonardo_Phoenix_10_A_modern_bold_logo_that_showcases_a_graphi_0.jpg" alt="Logo">
+    </div>
+
+    <!-- القائمة المخفية -->
+    <div class="list-container">
+        <a href="#social-media">تصميم السوشيال ميديا</a>
+        <a href="#branding">تصميم الشعارات</a>
+        <a href="#packaging">تصميم المنتجات والتعبئة</a>
+        <a href="#banners">تصميم الإعلانات والبنرات</a>
     </div>
 
     <!-- المحتوى الرئيسي داخل حاوية لتوسيط العناصر -->
     <div class="container">
-        <!-- تصميم السوشيال ميديا -->
-        <div class="service-items">
-            <div class="service-item">
-                <img src="https://raw.githubusercontent.com/AhmadMax1418/Design-by-Ahmad-/main/Leonardo_Phoenix_10_A_slender_crystalcut_perfume_bottle_with_a_1.jpg" alt="تصميم السوشيال ميديا">
+
+        <!-- 4 صور -->
+        <div class="services">
+            <!-- الصورة الأولى (تصميم السوشيال ميديا) -->
+            <div class="service-item" id="social-media">
+                <img src="https://github.com/AhmadMax1418/Design-by-Ahmad-/blob/main/Leonardo_Phoenix_10_A_dynamic_and_engaging_social_media_post_b_2.jpg" alt="تصميم السوشيال ميديا">
                 <h3>تصميم السوشيال ميديا</h3>
                 <p>تصميمات مبتكرة وجذابة تزيد من تفاعل الجمهور وتبني هويتك على وسائل التواصل الاجتماعي. تشمل بوستات، إعلانات، وقصص ملهمة تناسب كل منصة.</p>
             </div>
 
-            <!-- تصميم الشعارات والهوية البصرية -->
-            <div class="service-item">
-                <img src="https://raw.githubusercontent.com/AhmadMax1418/Design-by-Ahmad-/main/Leonardo_Phoenix_10_A_dynamic_and_engaging_social_media_post_b_2.jpg" alt="تصميم الشعارات والهوية البصرية">
+            <!-- الصورة الثانية (تصميم الشعارات) -->
+            <div class="service-item" id="branding">
+                <img src="https://github.com/AhmadMax1418/Design-by-Ahmad-/blob/main/Leonardo_Phoenix_10_A_refined_branding_board_showcasing_a_mode_1.jpg" alt="تصميم الشعارات">
                 <h3>تصميم الشعارات والهوية البصرية</h3>
                 <p>نحول أفكارك إلى شعارات فريدة وهوية بصرية متكاملة تعكس رؤية علامتك التجارية وتترك انطباعًا دائمًا لدى العملاء.</p>
             </div>
 
-            <!-- تصميم المنتجات والتعبئة والتغليف -->
-            <div class="service-item">
-                <img src="https://raw.githubusercontent.com/AhmadMax1418/Design-by-Ahmad-/main/Leonardo_Phoenix_10_A_refined_branding_board_showcasing_a_mode_1.jpg" alt="تصميم المنتجات والتعبئة والتغليف">
+            <!-- الصورة الثالثة (تصميم المنتجات والتعبئة) -->
+            <div class="service-item" id="packaging">
+                <img src="https://github.com/AhmadMax1418/Design-by-Ahmad-/blob/main/Leonardo_Phoenix_10_A_slender_crystalcut_perfume_bottle_with_a_1.jpg" alt="تصميم المنتجات والتعبئة">
                 <h3>تصميم المنتجات والتعبئة والتغليف</h3>
                 <p>تصاميم عصرية للتعبئة والتغليف تسلط الضوء على منتجك وتجعله مميزًا على الأرفف. نركز على دمج الجمال والوظائف العملية.</p>
             </div>
 
-            <!-- تصميم الإعلانات والبنرات -->
-            <div class="service-item">
-                <img src="https://raw.githubusercontent.com/AhmadMax1418/Design-by-Ahmad-/main/Leonardo_Phoenix_10_A_sleek_eyecatching_banner_advertisement_s_0.jpg" alt="تصميم الإعلانات والبنرات">
+            <!-- الصورة الرابعة (تصميم الإعلانات والبنرات) -->
+            <div class="service-item" id="banners">
+                <img src="https://github.com/AhmadMax1418/Design-by-Ahmad-/blob/main/Leonardo_Phoenix_10_A_sleek_eyecatching_banner_advertisement_s_0.jpg" alt="تصميم الإعلانات والبنرات">
                 <h3>تصميم الإعلانات والبنرات</h3>
                 <p>تصميمات إعلانية مبهرة تلفت انتباه جمهورك وتوصل رسالتك بكل وضوح. تشمل بانرات المواقع، الإعلانات المطبوعة، والدعائية الرقمية.</p>
             </div>
-        </div>
-
-        <!-- نموذج الاتصال -->
-        <div class="contact-form">
-            <h2>نموذج الاتصال</h2>
-            <form action="#" method="POST">
-                <input type="text" name="name" placeholder="الاسم الكامل" required>
-                <input type="email" name="email" placeholder="البريد الإلكتروني" required>
-                <input type="tel" name="phone" placeholder="رقم الهاتف" required>
-                <textarea name="message" placeholder="رسالتك" rows="5" required></textarea>
-                <button type="submit">إرسال</button>
-            </form>
         </div>
     </div>
 
