@@ -19,10 +19,10 @@
             background-position: center;
             color: white;
             text-align: center;
-            padding: 100px 0;
+            padding: 60px 0;
         }
         header h1 {
-            font-size: 40px;
+            font-size: 30px;
             font-weight: bold;
             margin: 0;
         }
@@ -30,18 +30,20 @@
             position: absolute;
             top: 20px;
             left: 20px;
-            width: 35px;
-            height: 35px;
+            width: 30px;
+            height: 30px;
             cursor: pointer;
         }
+
+        /* القائمة المنبثقة */
         .list-container {
             display: none;
             position: absolute;
-            top: 70px;
+            top: 60px;
             left: 20px;
             background-color: #fff;
             border: 1px solid #ccc;
-            padding: 20px;
+            padding: 10px;
             width: 200px;
             z-index: 10;
         }
@@ -58,14 +60,35 @@
             text-decoration: none;
             padding: 5px;
             color: #333;
-            margin-bottom: 5px;
+            margin-bottom: 10px;
             font-size: 16px;
         }
         .list-container a:hover {
             background-color: #f4f4f4;
         }
-        .list-container a + a {
-            margin-top: 5px;
+
+        /* تنسيق الصور داخل الخدمة */
+        .service-item img {
+            width: 100%;
+            height: auto;
+            max-width: 350px;
+            margin: 0 auto;
+            display: block;
+        }
+
+        .service-item {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .service-item h3 {
+            margin-top: 10px;
+            font-size: 20px;
+        }
+
+        .service-item p {
+            font-size: 14px;
+            color: #666;
         }
 
         /* تنسيق نموذج الاتصال */
@@ -114,7 +137,7 @@
 
     <!-- العنوان الرئيسي مع الخلفية -->
     <header>
-        <h1>كل ما تحتاجة لتصميمات <br>احترافية تحت سقف واحد</h1>
+        <h1>كل ما تحتاجة لتصميمات احترافية تحت سقف واحد</h1>
     </header>
 
     <!-- صورة اللوجو في أعلى يسار الصفحة -->
@@ -124,7 +147,6 @@
 
     <!-- القائمة المنبثقة -->
     <div class="list-container" id="listContainer">
-        <img src="https://raw.githubusercontent.com/AhmadMax1418/Design-by-Ahmad-/main/Leonardo_Phoenix_10_A_modern_bold_logo_that_showcases_a_graphi_0.jpg" alt="Logo كبير">
         <a href="#social-media">تصميم السوشيال ميديا</a>
         <a href="#branding">تصميم الشعارات</a>
         <a href="#packaging">تصميم المنتجات والتعبئة</a>
