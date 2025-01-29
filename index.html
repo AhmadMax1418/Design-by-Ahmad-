@@ -3,180 +3,199 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>موقع التصميمات</title>
-    <link rel="icon" href="https://github.com/AhmadMax1418/Design-by-Ahmad-/blob/main/Leonardo_Phoenix_10_A_modern_bold_logo_that_showcases_a_graphi_0.jpg?raw=true" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>موقع خدمات التصميم</title>
     <style>
-        /* التنسيق العام */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            direction: rtl;
-            background-color: #fff;
-            color: #333;
+            background-color: #f8f8f8;
         }
-        header {
-            background-image: url('https://github.com/AhmadMax1418/Design-by-Ahmad-/blob/main/1738103292308.jpg?raw=true');
-            background-size: cover;
-            color: white;
-            padding: 40px 20px;
+
+        /* تنسيق شريط التنقل */
+        .navbar {
+            background-color: #333;
+            padding: 10px;
             text-align: center;
         }
-        header h1 {
-            font-size: 36px;
-        }
-        header .menu {
-            display: flex;
-            justify-content: center;
-            gap: 15px;
-        }
-        header .menu a {
+
+        .navbar a {
             color: white;
+            padding: 12px 20px;
             text-decoration: none;
             font-size: 18px;
-            padding: 5px 10px;
+            margin: 0 10px;
         }
-        /* تأثير الصور عند التمرير */
+
+        .navbar a:hover {
+            background-color: #575757;
+        }
+
+        /* تنسيق العنوان */
+        h1 {
+            color: black;
+            font-size: 36px;
+            text-align: center;
+            padding: 30px;
+            background: url('https://github.com/AhmadMax1418/Design-by-Ahmad-/blob/main/1738103292308.jpg?raw=true') no-repeat center center/cover;
+            color: white;
+            margin: 0;
+        }
+
+        /* تنسيق الصور والخدمات */
+        .services {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .service {
+            width: 22%;
+            background-color: white;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            padding: 10px;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+
         .service img {
             width: 100%;
-            transition: transform 0.3s ease;
+            height: auto;
+            border-radius: 8px;
         }
-        .service img:hover {
-            transform: scale(1.1);
+
+        .service:hover {
+            transform: scale(1.05);
         }
-        .service {
-            text-align: center;
-            padding: 20px;
-        }
-        .faq-item {
-            padding: 15px;
+
+        .service h3 {
+            color: #333;
+            font-size: 20px;
             margin: 10px 0;
-            background-color: #f1f1f1;
-            border-radius: 5px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         }
-        .side-nav {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 250px;
-            height: 100%;
+
+        .service p {
+            color: #666;
+            font-size: 16px;
+        }
+
+        /* تنسيق نموذج التواصل */
+        .contact-form {
+            padding: 30px;
             background-color: #333;
             color: white;
-            padding: 20px;
-            display: flex;
-            flex-direction: column;
-        }
-        .side-nav a {
-            margin: 10px 0;
-            text-decoration: none;
-            color: white;
-            font-size: 18px;
-        }
-        .side-nav a:hover {
-            background-color: #555;
-        }
-        .service-item {
-            margin: 20px;
             text-align: center;
         }
-        .service-item img {
-            width: 80%;
-            transition: transform 0.3s ease;
-        }
-        .service-item img:hover {
-            transform: scale(1.1);
-        }
-        .contact-form input, .contact-form textarea {
+
+        .contact-form input,
+        .contact-form textarea {
             width: 100%;
             padding: 10px;
             margin: 10px 0;
-            border: 1px solid #ccc;
-            border-radius: 5px;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
         }
+
         .contact-form button {
             padding: 10px 20px;
-            background-color: #333;
-            color: white;
+            background-color: #4CAF50;
             border: none;
-            border-radius: 5px;
+            border-radius: 4px;
+            color: white;
+            font-size: 18px;
+            cursor: pointer;
+        }
+
+        .contact-form button:hover {
+            background-color: #45a049;
+        }
+
+        /* تنسيق الأسئلة المتكررة */
+        .faq {
+            padding: 30px;
+            background-color: #f2f2f2;
+            color: #333;
+        }
+
+        .faq h2 {
+            text-align: center;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .faq .question {
+            margin-bottom: 15px;
+        }
+
+        .faq .question h3 {
+            font-size: 20px;
+            margin: 5px 0;
+        }
+
+        .faq .question p {
+            font-size: 16px;
+            color: #666;
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>موقع التصميمات</h1>
-        <div class="menu">
-            <a href="#services">الخدمات</a>
-            <a href="#faq">الأسئلة المتكررة</a>
-            <a href="#pricing">الأسعار</a>
-            <a href="#ads-campaign">الحملة الإعلانية</a>
-        </div>
-    </header>
 
-    <div class="side-nav">
+    <div class="navbar">
+        <a href="#services">الخدمات</a>
         <a href="#faq">الأسئلة المتكررة</a>
-        <a href="#pricing">الأسعار</a>
-        <a href="#ads-campaign">الحملة الإعلانية</a>
+        <a href="#contact">التواصل</a>
     </div>
 
-    <section id="services">
+    <h1>هنا كل ما تحتاجه لتصميمات احترافية تحت سقف واحد</h1>
+
+    <div class="services" id="services">
         <div class="service">
-            <h2>الخدمات</h2>
-            <div class="service-item">
-                <img src="https://github.com/AhmadMax1418/Design-by-Ahmad-/blob/main/Leonardo_Phoenix_10_A_slender_crystalcut_perfume_bottle_with_a_1.jpg?raw=true" alt="تصميم منتجات وتعبئة وتغليف">
-                <p>تصميم منتجات وتعبئة وتغليف</p>
-            </div>
-            <div class="service-item">
-                <img src="https://github.com/AhmadMax1418/Design-by-Ahmad-/blob/main/Leonardo_Phoenix_10_A_sleek_eyecatching_banner_advertisement_s_0.jpg?raw=true" alt="تصميم إعلانات وبنرات">
-                <p>تصميم إعلانات وبنرات</p>
-            </div>
-            <div class="service-item">
-                <img src="https://github.com/AhmadMax1418/Design-by-Ahmad-/blob/main/Leonardo_Phoenix_10_A_refined_branding_board_showcasing_a_mode_1.jpg?raw=true" alt="تصميم شعار وهوية بصرية">
-                <p>تصميم شعار وهوية بصرية</p>
-            </div>
+            <img src="https://github.com/AhmadMax1418/Design-by-Ahmad-/blob/main/Leonardo_Phoenix_10_A_slender_crystalcut_perfume_bottle_with_a_1.jpg?raw=true" alt="تصميم المنتجات والتعبئة والتغليف">
+            <h3>تصميم المنتجات والتعبئة والتغليف</h3>
+            <p>نقدم لك أفضل تصميمات المنتجات التي تتناسب مع علامتك التجارية.</p>
         </div>
-    </section>
+        <div class="service">
+            <img src="https://github.com/AhmadMax1418/Design-by-Ahmad-/blob/main/Leonardo_Phoenix_10_A_sleek_eyecatching_banner_advertisement_s_0.jpg?raw=true" alt="تصميم السوشيال ميديا">
+            <h3>تصميم السوشيال ميديا</h3>
+            <p>نحن متخصصون في تصميم المحتوى لصفحاتك على وسائل التواصل الاجتماعي.</p>
+        </div>
+        <div class="service">
+            <img src="https://github.com/AhmadMax1418/Design-by-Ahmad-/blob/main/Leonardo_Phoenix_10_A_refined_branding_board_showcasing_a_mode_1.jpg?raw=true" alt="تصميم الشعار والهوية البصرية">
+            <h3>تصميم الشعار والهوية البصرية</h3>
+            <p>نساعدك في إنشاء هوية بصرية مميزة لعلامتك التجارية.</p>
+        </div>
+        <div class="service">
+            <img src="https://github.com/AhmadMax1418/Design-by-Ahmad-/blob/main/Leonardo_Phoenix_10_A_modern_bold_logo_that_showcases_a_graphi_0.jpg?raw=true" alt="تصميم اللوجو">
+            <h3>تصميم اللوجو</h3>
+            <p>نقوم بتصميم لوجو يعكس هوية عملك بشكل احترافي.</p>
+        </div>
+    </div>
 
-    <section id="faq">
-        <div class="faq-item">
-            <h3>إيه نوع التصميمات اللي بتقدر تشتغل عليها؟</h3>
-            <p>أنا متخصص في تصميم الجرافيك، وبتشمل شغلي تصميم الشعارات، الإعلانات، المنتجات، والتعبئة والتغليف.</p>
-        </div>
-        <div class="faq-item">
-            <h3>إيه البرامج اللي بتستخدمها؟</h3>
-            <p>أنا بشتغل على برامج التصميم الاحترافية زي فوتوشوب، إليستريتور، وإن ديزاين.</p>
-        </div>
-        <div class="faq-item">
-            <h3>إيه خبرتك في المجال؟</h3>
-            <p>اشتغلت على مشاريع متنوعة بين التصميم الإعلاني، تصميم الشعارات، والتعبئة والتغليف.</p>
-        </div>
-    </section>
-
-    <section id="pricing">
-        <div>
-            <h2>الأسعار</h2>
-            <p>تصميم سوشيال ميديا: يبدأ من 200 جنيه</p>
-            <p>تصميم شعارات: يبدأ من 700 جنيه</p>
-            <p>تصميم منتجات وتعبئة وتغليف: يبدأ من 600 جنيه</p>
-            <p>تصميم إعلانات وبنرات: يبدأ من 400 جنيه</p>
-        </div>
-    </section>
-
-    <section id="ads-campaign">
-        <h2>الحملة الإعلانية</h2>
-        <p>لو حابب تبدأ حملة إعلانية من البداية، يمكننا مساعدتك مع شركتنا التسويقية! العرض لوقت محدود بسعر رمزي يبدأ من 5000 جنيه. <a href="https://aljblay.com/" target="_blank">تعرف على شركائنا في التسويق</a></p>
-    </section>
-
-    <section id="contact">
-        <h2>نموذج التواصل</h2>
-        <form class="contact-form" action="mailto:example@email.com" method="POST">
-            <input type="text" name="name" placeholder="الاسم" required>
-            <input type="email" name="email" placeholder="البريد الإلكتروني" required>
-            <textarea name="message" placeholder="الرسالة" required></textarea>
+    <div class="contact-form" id="contact">
+        <h2>تواصل معنا</h2>
+        <form>
+            <input type="text" placeholder="الاسم" required>
+            <input type="email" placeholder="البريد الإلكتروني" required>
+            <textarea placeholder="رسالتك..." required></textarea>
             <button type="submit">إرسال</button>
         </form>
-    </section>
+    </div>
+
+    <div class="faq" id="faq">
+        <h2>الأسئلة المتكررة</h2>
+        <div class="question">
+            <h3>ما هي الخدمات التي تقدمها؟</h3>
+            <p>نحن نقدم خدمات تصميم السوشيال ميديا، تصميم الشعار، تصميم المنتجات، وغيرها من خدمات التصميم الاحترافي.</p>
+        </div>
+        <div class="question">
+            <h3>هل يمكنني الحصول على تصميم مخصص؟</h3>
+            <p>نعم، نقدم تصاميم مخصصة لتلبية احتياجاتك الخاصة.</p>
+        </div>
+    </div>
+
 </body>
 </html>
