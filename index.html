@@ -105,6 +105,8 @@
             padding: 30px;
             margin-top: 30px;
             border-radius: 8px;
+            max-width: 600px;
+            margin: 30px auto;
         }
         .contact-form input, .contact-form select, .contact-form textarea {
             width: 100%;
@@ -120,9 +122,36 @@
         .contact-form h2 {
             font-size: 28px;
             margin-bottom: 20px;
+            text-align: center;
+        }
+        .contact-form button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            font-size: 20px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            width: 100%;
+        }
+        .contact-form button:hover {
+            background-color: #45a049;
         }
         .hidden {
             display: none;
+        }
+        .advertisement {
+            background-color: #ff4500;
+            padding: 10px 20px;
+            color: white;
+            text-align: center;
+            font-size: 20px;
+        }
+        .advertisement a {
+            color: white;
+            text-decoration: underline;
+            margin: 0 10px;
         }
     </style>
 </head>
@@ -134,6 +163,10 @@
     <a href="#faq">الأسئلة المتكررة</a>
     <a href="#contact-form">نموذج التواصل</a>
 </header>
+
+<div class="advertisement">
+    <p>إعلان: هل ترغب في الترويج لشركتك؟ <a href="#">انقر هنا للتواصل مع شركة الترويج</a></p>
+</div>
 
 <div class="banner">
     <h1>هنا كل ما تحتاجه لتصميمات احترافية تحت سقف واحد</h1>
@@ -169,7 +202,22 @@
             <h3>إيه نوع التصميمات اللي بتقدر تشتغل عليها؟</h3>
             <p>تصميم الشعارات والهويات البصرية، تصميم الملصقات والبنرات، تصميم تيشرتات وأي منتجات قابلة للطباعة، تصميم مواقع التواصل الاجتماعي (بوستات وإعلانات)، تصميم بروفايلات الشركات والمجلات والكتيبات، تعديل الصور بشكل احترافي.</p>
         </div>
-        <!-- باقي الأسئلة هنا -->
+        <div class="faq-item">
+            <h3>إزاي أقدر أتواصل معاكم؟</h3>
+            <p>من خلال نموذج التواصل الموجود في أسفل الصفحة، أو عن طريق التواصل عبر البريد الإلكتروني أو الهاتف.</p>
+        </div>
+        <div class="faq-item">
+            <h3>هل تقدمون خدمات تصميم مستمر؟</h3>
+            <p>نعم، نحن نقدم خدمات تصميم مستمرة ودعم على مدار الساعة حسب حاجة العميل.</p>
+        </div>
+        <div class="faq-item">
+            <h3>كم يستغرق وقت تصميم الشعار؟</h3>
+            <p>عادةً ما يستغرق تصميم الشعار من 3 إلى 5 أيام عمل، ولكن يمكن تسريع العملية بناءً على احتياجات العميل.</p>
+        </div>
+        <div class="faq-item">
+            <h3>هل يمكن تعديل التصميم بعد التسليم؟</h3>
+            <p>نعم، يمكن إجراء تعديلات محدودة بعد التسليم، وذلك حسب اتفاقنا المسبق مع العميل.</p>
+        </div>
     </div>
 </div>
 
@@ -182,15 +230,12 @@
             <option value="social-media">تصميم سوشيال ميديا</option>
             <option value="logo">تصميم شعار</option>
             <option value="product">تصميم منتجات</option>
-            <option value="banner">تصميم إعلانات</option>
+            <option value="banner">تصميم بنر</option>
         </select>
 
-        <label for="project-name">اسم المشروع/الفكرة:</label>
-        <input type="text" id="project-name" name="project-name" required>
-
-        <div id="design-description" class="hidden">
-            <label for="description">نبذة عن فكرة التصميم:</label>
-            <textarea id="description" name="description"></textarea>
+        <div id="design-details" class="hidden">
+            <label for="design-description">وصف التصميم:</label>
+            <textarea id="design-description" name="design-description"></textarea>
         </div>
 
         <label for="name">الاسم:</label>
@@ -199,22 +244,25 @@
         <label for="phone">رقم الهاتف:</label>
         <input type="tel" id="phone" name="phone" required>
 
-        <input type="submit" value="إرسال">
+        <label for="project">نبذة عن المشروع:</label>
+        <textarea id="project" name="project" required></textarea>
+
+        <button type="submit">إرسال</button>
     </form>
 </div>
 
 <footer>
-    <p>موقع تصميمات احترافية | جميع الحقوق محفوظة</p>
+    <p>&copy; 2025 موقع تصميمات احترافية. جميع الحقوق محفوظة.</p>
 </footer>
 
 <script>
     function toggleDesignDetails() {
-        const designType = document.getElementById('design-type').value;
-        const descriptionField = document.getElementById('design-description');
+        var designType = document.getElementById('design-type').value;
+        var designDetails = document.getElementById('design-details');
         if (designType) {
-            descriptionField.classList.remove('hidden');
+            designDetails.classList.remove('hidden');
         } else {
-            descriptionField.classList.add('hidden');
+            designDetails.classList.add('hidden');
         }
     }
 </script>
