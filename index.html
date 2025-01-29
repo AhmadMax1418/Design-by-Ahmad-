@@ -31,7 +31,7 @@
             background-color: #575757;
         }
 
-        /* تنسيق العنوان */
+        /* تنسيق العنوان الرئيسي */
         h1 {
             color: black;
             font-size: 36px;
@@ -82,6 +82,42 @@
             font-size: 16px;
         }
 
+        /* تنسيق الأسئلة المتكررة */
+        .faq {
+            padding: 30px;
+            background-color: #f2f2f2;
+            color: #333;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .faq h2 {
+            text-align: center;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .faq .question {
+            margin-bottom: 15px;
+        }
+
+        .faq .question h3 {
+            font-size: 20px;
+            margin: 5px 0;
+        }
+
+        .faq .question p {
+            font-size: 16px;
+            color: #666;
+        }
+
+        /* تنسيق شريط الأسئلة المتكررة ليكون متحركًا */
+        .faq-container {
+            max-height: 200px;
+            overflow-y: auto;
+        }
+
         /* تنسيق نموذج التواصل */
         .contact-form {
             padding: 30px;
@@ -114,32 +150,6 @@
             background-color: #45a049;
         }
 
-        /* تنسيق الأسئلة المتكررة */
-        .faq {
-            padding: 30px;
-            background-color: #f2f2f2;
-            color: #333;
-        }
-
-        .faq h2 {
-            text-align: center;
-            font-size: 24px;
-            margin-bottom: 20px;
-        }
-
-        .faq .question {
-            margin-bottom: 15px;
-        }
-
-        .faq .question h3 {
-            font-size: 20px;
-            margin: 5px 0;
-        }
-
-        .faq .question p {
-            font-size: 16px;
-            color: #666;
-        }
     </style>
 </head>
 <body>
@@ -153,48 +163,63 @@
     <h1>هنا كل ما تحتاجه لتصميمات احترافية تحت سقف واحد</h1>
 
     <div class="services" id="services">
+        <!-- تصميم السوشيال ميديا -->
+        <div class="service">
+            <img src="https://github.com/AhmadMax1418/Design-by-Ahmad-/blob/main/Leonardo_Phoenix_10_A_dynamic_and_engaging_social_media_post_b_2.jpg?raw=true" alt="تصميم السوشيال ميديا">
+            <h3>تصميم السوشيال ميديا</h3>
+            <p>تصميمات مبتكرة وجذابة تزيد من تفاعل الجمهور وتبني هويتك على وسائل التواصل الاجتماعي. تشمل بوستات، إعلانات، وقصص ملهمة تناسب كل منصة.</p>
+        </div>
+
+        <!-- تصميم الشعارات والهوية البصرية -->
+        <div class="service">
+            <img src="https://github.com/AhmadMax1418/Design-by-Ahmad-/blob/main/Leonardo_Phoenix_10_A_refined_branding_board_showcasing_a_mode_1.jpg?raw=true" alt="تصميم الشعارات والهوية البصرية">
+            <h3>تصميم الشعارات والهوية البصرية</h3>
+            <p>نحول أفكارك إلى شعارات فريدة وهوية بصرية متكاملة تعكس رؤية علامتك التجارية وتترك انطباعًا دائمًا لدى العملاء.</p>
+        </div>
+
+        <!-- تصميم المنتجات والتعبئة والتغليف -->
         <div class="service">
             <img src="https://github.com/AhmadMax1418/Design-by-Ahmad-/blob/main/Leonardo_Phoenix_10_A_slender_crystalcut_perfume_bottle_with_a_1.jpg?raw=true" alt="تصميم المنتجات والتعبئة والتغليف">
             <h3>تصميم المنتجات والتعبئة والتغليف</h3>
-            <p>نقدم لك أفضل تصميمات المنتجات التي تتناسب مع علامتك التجارية.</p>
+            <p>تصاميم عصرية للتعبئة والتغليف تسلط الضوء على منتجك وتجعله مميزًا على الأرفف. نركز على دمج الجمال والوظائف العملية.</p>
         </div>
+
+        <!-- تصميم الإعلانات والبنرات -->
         <div class="service">
-            <img src="https://github.com/AhmadMax1418/Design-by-Ahmad-/blob/main/Leonardo_Phoenix_10_A_sleek_eyecatching_banner_advertisement_s_0.jpg?raw=true" alt="تصميم السوشيال ميديا">
-            <h3>تصميم السوشيال ميديا</h3>
-            <p>نحن متخصصون في تصميم المحتوى لصفحاتك على وسائل التواصل الاجتماعي.</p>
-        </div>
-        <div class="service">
-            <img src="https://github.com/AhmadMax1418/Design-by-Ahmad-/blob/main/Leonardo_Phoenix_10_A_refined_branding_board_showcasing_a_mode_1.jpg?raw=true" alt="تصميم الشعار والهوية البصرية">
-            <h3>تصميم الشعار والهوية البصرية</h3>
-            <p>نساعدك في إنشاء هوية بصرية مميزة لعلامتك التجارية.</p>
-        </div>
-        <div class="service">
-            <img src="https://github.com/AhmadMax1418/Design-by-Ahmad-/blob/main/Leonardo_Phoenix_10_A_modern_bold_logo_that_showcases_a_graphi_0.jpg?raw=true" alt="تصميم اللوجو">
-            <h3>تصميم اللوجو</h3>
-            <p>نقوم بتصميم لوجو يعكس هوية عملك بشكل احترافي.</p>
+            <img src="https://github.com/AhmadMax1418/Design-by-Ahmad-/blob/main/Leonardo_Phoenix_10_A_sleek_eyecatching_banner_advertisement_s_0.jpg?raw=true" alt="تصميم الإعلانات والبنرات">
+            <h3>تصميم الإعلانات والبنرات</h3>
+            <p>تصميمات إعلانية مبهرة تلفت انتباه جمهورك وتوصل رسالتك بكل وضوح. تشمل بانرات المواقع، الإعلانات المطبوعة، والدعائية الرقمية.</p>
         </div>
     </div>
 
+    <!-- الأسئلة المتكررة -->
+    <div class="faq" id="faq">
+        <h2>الأسئلة المتكررة (FAQ)</h2>
+        <div class="faq-container">
+            <div class="question">
+                <h3>ما هي الخدمات التي تقدمها؟</h3>
+                <p>نحن نقدم خدمات تصميم السوشيال ميديا، تصميم الشعار، تصميم المنتجات، وغيرها من خدمات التصميم الاحترافي.</p>
+            </div>
+            <div class="question">
+                <h3>هل يمكنني الحصول على تصميم مخصص؟</h3>
+                <p>نعم، نقدم تصاميم مخصصة لتلبية احتياجاتك الخاصة.</p>
+            </div>
+            <div class="question">
+                <h3>أين يمكنني زيارة موقع الشركة؟</h3>
+                <p>يمكنك زيارة موقع الشركة عبر هذا الرابط: <a href="https://www.yourcompanywebsite.com" target="_blank">موقع الشركة</a>.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- نموذج التواصل -->
     <div class="contact-form" id="contact">
         <h2>تواصل معنا</h2>
         <form>
-            <input type="text" placeholder="الاسم" required>
-            <input type="email" placeholder="البريد الإلكتروني" required>
-            <textarea placeholder="رسالتك..." required></textarea>
+            <input type="text" placeholder="الاسم" required><br>
+            <input type="tel" placeholder="رقم الهاتف" required><br>
+            <textarea placeholder="نبذة عن المشروع للتواصل" required></textarea><br>
             <button type="submit">إرسال</button>
         </form>
-    </div>
-
-    <div class="faq" id="faq">
-        <h2>الأسئلة المتكررة</h2>
-        <div class="question">
-            <h3>ما هي الخدمات التي تقدمها؟</h3>
-            <p>نحن نقدم خدمات تصميم السوشيال ميديا، تصميم الشعار، تصميم المنتجات، وغيرها من خدمات التصميم الاحترافي.</p>
-        </div>
-        <div class="question">
-            <h3>هل يمكنني الحصول على تصميم مخصص؟</h3>
-            <p>نعم، نقدم تصاميم مخصصة لتلبية احتياجاتك الخاصة.</p>
-        </div>
     </div>
 
 </body>
