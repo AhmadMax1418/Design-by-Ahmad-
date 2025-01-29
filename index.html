@@ -3,156 +3,202 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>أسئلة متكررة - FAQ</title>
+    <title>موقع تصميمات احترافية</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f8f9fa;
-            color: #333;
+            direction: rtl;
             margin: 0;
             padding: 0;
         }
         header {
-            background-color: #007bff;
+            background-color: #333;
+            padding: 10px;
             color: white;
-            padding: 10px 0;
+            text-align: center;
+        }
+        header a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+        }
+        .banner {
+            background-image: url('https://github.com/AhmadMax1418/Design-by-Ahmad-/blob/main/1738103292308.jpg?raw=true');
+            background-size: cover;
+            height: 300px;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .banner h1 {
+            font-size: 48px;
+            color: #000000;
+        }
+        .services {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            flex-wrap: wrap;
+        }
+        .service {
+            text-align: center;
+            width: 22%;
+            margin-bottom: 20px;
+        }
+        .service img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .service h3 {
+            font-size: 22px;
+            color: #000000;
+            margin-top: 10px;
+        }
+        .service p {
+            color: #555;
+        }
+        .faq {
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+        .faq h2 {
+            text-align: center;
+            color: #000000;
+        }
+        .faq p {
+            font-size: 16px;
+            margin: 5px 0;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 10px;
             text-align: center;
         }
         .faq-container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-        .faq-title {
-            font-size: 32px;
-            font-weight: bold;
-            color: black;
-            margin-bottom: 20px;
+            display: flex;
+            flex-direction: column;
         }
         .faq-item {
-            background-color: #fff;
             margin-bottom: 10px;
-            padding: 15px;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
         .faq-item h3 {
-            font-size: 24px;
-            color: #007bff;
+            color: #000000;
         }
         .faq-item p {
-            font-size: 18px;
+            font-size: 14px;
             color: #555;
-        }
-        .company-link {
-            color: #007bff;
-            text-decoration: none;
-        }
-        .faq-container a {
-            color: #007bff;
-            text-decoration: none;
         }
     </style>
 </head>
 <body>
 
-    <header>
-        <h1>أسئلة متكررة (FAQ)</h1>
-    </header>
+<header>
+    <a href="#">الرئيسية</a>
+    <a href="#services">الخدمات</a>
+    <a href="#faq">الأسئلة المتكررة (FAQ)</a>
+</header>
 
+<div class="banner">
+    <h1>هنا كل ما تحتاجه لتصميمات احترافية تحت سقف واحد</h1>
+</div>
+
+<div id="services" class="services">
+    <div class="service">
+        <img src="https://github.com/AhmadMax1418/Design-by-Ahmad-/blob/main/Leonardo_Phoenix_10_A_dynamic_and_engaging_social_media_post_b_2.jpg?raw=true" alt="تصميم السوشيال ميديا">
+        <h3>تصميم السوشيال ميديا</h3>
+        <p>تصميمات مبتكرة وجذابة تزيد من تفاعل الجمهور وتبني هويتك على وسائل التواصل الاجتماعي. تشمل بوستات، إعلانات، وقصص ملهمة تناسب كل منصة.</p>
+    </div>
+    <div class="service">
+        <img src="https://github.com/AhmadMax1418/Design-by-Ahmad-/blob/main/Leonardo_Phoenix_10_A_refined_branding_board_showcasing_a_mode_1.jpg?raw=true" alt="تصميم الشعارات والهوية البصرية">
+        <h3>تصميم الشعارات والهوية البصرية</h3>
+        <p>نحول أفكارك إلى شعارات فريدة وهوية بصرية متكاملة تعكس رؤية علامتك التجارية وتترك انطباعًا دائمًا لدى العملاء.</p>
+    </div>
+    <div class="service">
+        <img src="https://github.com/AhmadMax1418/Design-by-Ahmad-/blob/main/Leonardo_Phoenix_10_A_slender_crystalcut_perfume_bottle_with_a_1.jpg?raw=true" alt="تصميم المنتجات والتعبئة والتغليف">
+        <h3>تصميم المنتجات والتعبئة والتغليف</h3>
+        <p>تصاميم عصرية للتعبئة والتغليف تسلط الضوء على منتجك وتجعله مميزًا على الأرفف. نركز على دمج الجمال والوظائف العملية.</p>
+    </div>
+    <div class="service">
+        <img src="https://github.com/AhmadMax1418/Design-by-Ahmad-/blob/main/Leonardo_Phoenix_10_A_sleek_eyecatching_banner_advertisement_s_0.jpg?raw=true" alt="تصميم الإعلانات والبنرات">
+        <h3>تصميم الإعلانات والبنرات</h3>
+        <p>تصميمات إعلانية مبهرة تلفت انتباه جمهورك وتوصل رسالتك بكل وضوح. تشمل بانرات المواقع، الإعلانات المطبوعة، والدعائية الرقمية.</p>
+    </div>
+</div>
+
+<div id="faq" class="faq">
+    <h2>الأسئلة المتكررة (FAQ)</h2>
     <div class="faq-container">
-        <div class="faq-title">الأسئلة المتكررة</div>
-        
         <div class="faq-item">
             <h3>إيه نوع التصميمات اللي بتقدر تشتغل عليها؟</h3>
-            <p>تصميم الشعارات والهويات البصرية.</p>
-            <p>تصميم الملصقات والبنرات.</p>
-            <p>تصميم تيشرتات وأي منتجات قابلة للطباعة.</p>
-            <p>تصميم مواقع التواصل الاجتماعي (بوستات وإعلانات).</p>
-            <p>تصميم بروفايلات الشركات والمجلات والكتيبات.</p>
-            <p>تعديل الصور بشكل احترافي.</p>
+            <p>تصميم الشعارات والهويات البصرية، تصميم الملصقات والبنرات، تصميم تيشرتات وأي منتجات قابلة للطباعة، تصميم مواقع التواصل الاجتماعي (بوستات وإعلانات)، تصميم بروفايلات الشركات والمجلات والكتيبات، تعديل الصور بشكل احترافي.</p>
         </div>
-
         <div class="faq-item">
             <h3>إيه البرامج اللي بتستخدمها؟</h3>
-            <p>Adobe Photoshop لتعديل الصور والتصميمات المتنوعة.</p>
-            <p>Adobe Illustrator لتصميم الشعارات والرسومات المتجهة.</p>
-            <p>InDesign لو التصاميم محتاجة تنسيق مستندات أو كتيبات.</p>
+            <p>Adobe Photoshop لتعديل الصور والتصميمات المتنوعة، Adobe Illustrator لتصميم الشعارات والرسومات المتجهة، InDesign لو التصاميم محتاجة تنسيق مستندات أو كتيبات.</p>
         </div>
-
         <div class="faq-item">
             <h3>إيه خبرتك في المجال؟</h3>
             <p>اشتغلت على مشاريع متنوعة بين التصميم الإعلاني وتصميم المنتجات، مع العملاء على منصات العمل الحر.</p>
         </div>
-
         <div class="faq-item">
             <h3>إيه اللي بيميزك عن غيرك؟</h3>
-            <p>الاهتمام بأدق التفاصيل.</p>
-            <p>مرونة في العمل مع العميل.</p>
-            <p>سرعة في التنفيذ مع الحفاظ على الجودة.</p>
-            <p>الالتزام الكامل برضا العميل.</p>
+            <p>الاهتمام بأدق التفاصيل، مرونة في العمل مع العميل، سرعة في التنفيذ مع الحفاظ على الجودة، الالتزام الكامل برضا العميل.</p>
         </div>
-
         <div class="faq-item">
             <h3>لو عايز أعمل تعديلات على التصميم بعد ما تخلصه؟</h3>
             <p>التعديلات: 3 مرات مجانية بعد تسليم التصميم، وبعدها تكون التعديلات حسب الاتفاق.</p>
         </div>
-
         <div class="faq-item">
             <h3>ممكن توريني نماذج لشغلك؟</h3>
             <p>نعم، يوجد بورتفوليو يحتوي على نماذج من الشغل السابق، ويمكنني إرسال روابط أو ملف يحتوي على أهم النماذج.</p>
         </div>
-
         <div class="faq-item">
             <h3>إزاي بتحدد سعر المشروع؟</h3>
             <p>السعر يتحدد بناءً على حجم العمل وعدد التصميمات، بالإضافة لوقت التنفيذ والتعديلات المتوقعة.</p>
         </div>
-
         <div class="faq-item">
             <h3>الوقت المطلوب لتنفيذ المشروع؟</h3>
             <p>المشاريع البسيطة تأخذ من 2 إلى 3 أيام، والمشاريع الأكبر مثل بروفايلات الشركات تأخذ وقت أطول حسب التفاصيل.</p>
         </div>
-
         <div class="faq-item">
             <h3>لو المشروع مستعجل، تقدر تخلصه في وقت أسرع؟</h3>
             <p>نعم، يمكنني العمل على المشاريع المستعجلة، مع تكلفة إضافية لضغط الوقت.</p>
         </div>
-
         <div class="faq-item">
             <h3>إيه الخطوات اللي بتتبعها عشان تبدأ التصميم؟</h3>
             <p>فهم الفكرة من العميل، عمل بحث، اسكتشات أولية، ثم تنفيذ التصميم النهائي بناءً على اختيار العميل.</p>
         </div>
-
         <div class="faq-item">
             <h3>إزاي أضمن إن التصميم هيكون مناسب للسوق أو الجمهور المستهدف؟</h3>
             <p>بدراسة طبيعة الجمهور المستهدف والمجال، وضمان توافق التصميم مع الهدف المطلوب.</p>
         </div>
-
         <div class="faq-item">
-            <h3>لو احتجت نفس التصميم بصيغ مختلفة (PDF، PNG،...)?</h3>
+            <h3>لو احتجت نفس التصميم بصيغ مختلفة (PDF، PNG،...)؟</h3>
             <p>يمكنني تقديم التصميم بصيغ مختلفة حسب الحاجة.</p>
         </div>
-
         <div class="faq-item">
             <h3>لو عايز أعمل تعديلات بعد فترة طويلة؟</h3>
             <p>يتم الاحتفاظ بالملفات لمدة 3-6 شهور، وبعدها يتم التنسيق مع العميل حسب الحاجة.</p>
         </div>
-
         <div class="faq-item">
             <h3>بتشتغل مع عملاء من أماكن مختلفة؟</h3>
             <p>نعم، أتعامل مع عملاء عالميين وأستخدم منصات مثل Upwork و5أو.</p>
         </div>
-
         <div class="faq-item">
             <h3>إزاي بيتم الدفع؟</h3>
             <p>الدفع يتم عن طريق منصات العمل الحر أو التحويل البنكي، مع دفعة مقدمة قبل البدء.</p>
         </div>
-
-        <div class="faq-item">
-            <h3>شركة الترويج</h3>
-            <p>للمزيد من التفاصيل حول خدماتنا أو إذا كنت ترغب في التحدث معنا، يرجى زيارة <a href="https://www.example.com" class="company-link" target="_blank">موقعنا الرسمي</a>.</p>
-        </div>
     </div>
+</div>
+
+<footer>
+    <p>موقع تصميمات احترافية | جميع الحقوق محفوظة</p>
+</footer>
 
 </body>
 </html>
