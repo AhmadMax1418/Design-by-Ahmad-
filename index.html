@@ -13,15 +13,16 @@
         }
         header {
             background-color: #333;
-            padding: 10px;
+            padding: 15px;
             color: white;
             text-align: center;
+            font-size: 18px;
         }
         header a {
             color: white;
             text-decoration: none;
-            margin: 0 15px;
-            font-size: 18px;
+            margin: 0 20px;
+            font-size: 20px;
         }
         .banner {
             background-image: url('https://github.com/AhmadMax1418/Design-by-Ahmad-/blob/main/1738103292308.jpg?raw=true');
@@ -60,54 +61,65 @@
         }
         .service p {
             color: #555;
+            font-size: 16px;
         }
         .faq {
             background-color: #f4f4f4;
-            padding: 20px;
+            padding: 30px 20px;
         }
         .faq h2 {
             text-align: center;
             color: #000000;
+            font-size: 28px;
         }
         .faq p {
-            font-size: 16px;
-            margin: 5px 0;
+            font-size: 18px;
+            margin: 10px 0;
         }
         footer {
             background-color: #333;
             color: white;
-            padding: 10px;
+            padding: 15px;
             text-align: center;
+            font-size: 18px;
         }
         .faq-container {
             display: flex;
             flex-direction: column;
+            font-size: 18px;
         }
         .faq-item {
-            margin-bottom: 10px;
+            margin-bottom: 15px;
         }
         .faq-item h3 {
             color: #000000;
+            font-size: 22px;
         }
         .faq-item p {
-            font-size: 14px;
+            font-size: 18px;
             color: #555;
         }
         .contact-form {
             background-color: #333;
             color: white;
-            padding: 15px;
-            margin-top: 20px;
+            padding: 30px;
+            margin-top: 30px;
+            border-radius: 8px;
         }
         .contact-form input, .contact-form select, .contact-form textarea {
             width: 100%;
-            padding: 10px;
-            margin: 10px 0;
+            padding: 15px;
+            margin: 15px 0;
             border-radius: 5px;
             border: 1px solid #ccc;
+            font-size: 18px;
         }
         .contact-form label {
-            font-size: 16px;
+            font-size: 20px;
+        }
+        .contact-form h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
         }
         .hidden {
             display: none;
@@ -119,7 +131,8 @@
 <header>
     <a href="#">الرئيسية</a>
     <a href="#services">الخدمات</a>
-    <a href="#faq">الأسئلة المتكررة (FAQ)</a>
+    <a href="#faq">الأسئلة المتكررة</a>
+    <a href="#contact-form">نموذج التواصل</a>
 </header>
 
 <div class="banner">
@@ -150,7 +163,7 @@
 </div>
 
 <div id="faq" class="faq">
-    <h2>الأسئلة المتكررة (FAQ)</h2>
+    <h2>الأسئلة المتكررة</h2>
     <div class="faq-container">
         <div class="faq-item">
             <h3>إيه نوع التصميمات اللي بتقدر تشتغل عليها؟</h3>
@@ -160,7 +173,7 @@
     </div>
 </div>
 
-<div class="contact-form">
+<div id="contact-form" class="contact-form">
     <h2>نموذج التواصل</h2>
     <form>
         <label for="design-type">نوع التصميم:</label>
