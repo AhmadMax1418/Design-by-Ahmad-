@@ -147,6 +147,14 @@
             color: white;
             text-align: center;
             font-size: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .advertisement img {
+            width: 40px;
+            height: auto;
+            margin-left: 10px;
         }
         .advertisement a {
             color: white;
@@ -166,8 +174,8 @@
 
 <div class="advertisement">
     <p>إعلان: هل ترغب في الترويج لشركتك؟ <a href="https://aljblay.com/" target="_blank">انقر هنا للتواصل مع شركة الترويج</a></p>
+    <img src="https://example.com/logo.png" alt="شعار الموقع">
 </div>
-
 
 <div class="banner">
     <h1>هنا كل ما تحتاجه لتصميمات احترافية تحت سقف واحد</h1>
@@ -253,31 +261,20 @@
 </div>
 
 <footer>
-    <p>&copy; 2025 موقع تصميمات احترافية. جميع الحقوق محفوظة.</p>
+    <p>&copy; 2025 تصميمات احترافية | جميع الحقوق محفوظة</p>
 </footer>
 
 <script>
     function toggleDesignDetails() {
-        var designType = document.getElementById('design-type').value;
-        var designDetails = document.getElementById('design-details');
-        if (designType) {
-            designDetails.classList.remove('hidden');
+        var designType = document.getElementById("design-type").value;
+        var designDetails = document.getElementById("design-details");
+        if (designType !== "") {
+            designDetails.classList.remove("hidden");
         } else {
-            designDetails.classList.add('hidden');
+            designDetails.classList.add("hidden");
         }
     }
 </script>
 
 </body>
 </html>
-<header>
-    <!-- إضافة اللوجو في الشريط العلوي -->
-    <div class="logo" style="float: left; padding: 10px;">
-        <img src="https://github.com/AhmadMax1418/Design-by-Ahmad-/blob/main/Leonardo_Phoenix_10_A_modern_bold_logo_that_showcases_a_graphi_0.jpg?raw=true" alt="Logo" width="100">
-    </div>
-    
-    <!-- إضافة الشريط الإعلاني -->
-    <div class="advertisement" style="text-align: center; padding: 10px; background-color: #f8f8f8;">
-        <p>إعلان: هل ترغب في الترويج لشركتك؟ <a href="https://aljblay.com/" target="_blank">انقر هنا للتواصل مع شركة الترويج</a></p>
-    </div>
-</header>
