@@ -44,6 +44,7 @@
             display: flex;
             justify-content: space-between;
             gap: 20px;
+            animation: fadeIn 1s ease;
         }
         .service {
             width: 23%;
@@ -56,10 +57,11 @@
         .service img {
             width: 100%;
             height: auto;
-            transition: transform 0.3s ease;
+            transition: transform 0.3s ease, filter 0.3s ease;
         }
         .service img:hover {
             transform: scale(1.1);
+            filter: brightness(1.2);
         }
         .service h3 {
             font-size: 22px;
@@ -132,6 +134,48 @@
         .contact-form button:active {
             background-color: #222;
         }
+
+        /* Fade-in effect */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        /* إضافة النجوم لتقييمات العملاء */
+        .customer-reviews {
+            display: flex;
+            justify-content: space-evenly;
+            margin-top: 20px;
+        }
+
+        .review {
+            text-align: center;
+            width: 30%;
+            background-color: #f9f9f9;
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .review p {
+            font-size: 14px;
+            color: #666;
+        }
+
+        .review h4 {
+            font-size: 16px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .stars {
+            color: gold;
+        }
+
     </style>
 </head>
 <body>
@@ -164,42 +208,80 @@
         <!-- خدمات الموقع -->
         <div class="services">
             <div class="service">
-                <img src="https://github.com/AhmadMax1418/Design-by-Ahmad-/blob/main/Leonardo_Phoenix_10_A_dynamic_and_engaging_social_media_post_b_2.jpg?raw=true" alt="تصميم السوشيال ميديا">
-                <h3>تصميم السوشيال ميديا</h3>
-                <p>تصميمات مبتكرة وجذابة تزيد من تفاعل الجمهور وتبني هويتك على وسائل التواصل الاجتماعي.</p>
+                <a href="service_social_media.html">
+                    <img src="https://github.com/AhmadMax1418/Design-by-Ahmad-/blob/main/Leonardo_Phoenix_10_A_dynamic_and_engaging_social_media_post_b_2.jpg?raw=true" alt="تصميم السوشيال ميديا">
+                    <h3>تصميم السوشيال ميديا</h3>
+                    <p>تصميمات مبتكرة وجذابة تزيد من تفاعل الجمهور وتبني هويتك على وسائل التواصل الاجتماعي.</p>
+                </a>
             </div>
             
             <div class="service">
-                <img src="https://github.com/AhmadMax1418/Design-by-Ahmad-/blob/main/Leonardo_Phoenix_10_A_refined_branding_board_showcasing_a_mode_1.jpg?raw=true" alt="تصميم الشعارات">
-                <h3>تصميم الشعارات</h3>
-                <p>نحول أفكارك إلى شعارات فريدة وهوية بصرية متكاملة تعكس رؤية علامتك التجارية.</p>
+                <a href="service_logos.html">
+                    <img src="https://github.com/AhmadMax1418/Design-by-Ahmad-/blob/main/Leonardo_Phoenix_10_A_refined_branding_board_showcasing_a_mode_1.jpg?raw=true" alt="تصميم الشعارات">
+                    <h3>تصميم الشعارات</h3>
+                    <p>نحول أفكارك إلى شعارات فريدة وهوية بصرية متكاملة تعكس رؤية علامتك التجارية.</p>
+                </a>
             </div>
             
             <div class="service">
-                <img src="https://github.com/AhmadMax1418/Design-by-Ahmad-/blob/main/Leonardo_Phoenix_10_A_slender_crystalcut_perfume_bottle_with_a_1.jpg?raw=true" alt="تصميم المنتجات والتعبئة والتغليف">
-                <h3>تصميم المنتجات والتعبئة والتغليف</h3>
-                <p>تصاميم عصرية للتعبئة والتغليف تسلط الضوء على منتجك وتجعله مميزًا.</p>
+                <a href="service_packaging.html">
+                    <img src="https://github.com/AhmadMax1418/Design-by-Ahmad-/blob/main/Leonardo_Phoenix_10_A_slender_crystalcut_perfume_bottle_with_a_mode_0.jpg?raw=true" alt="تصميم المنتجات والتعبئة والتغليف">
+                    <h3>تصميم المنتجات والتعبئة والتغليف</h3>
+                    <p>تصاميم مميزة تعكس هوية المنتج وتلبي احتياجات السوق المستهدف.</p>
+                </a>
             </div>
-            
+
             <div class="service">
-                <img src="https://github.com/AhmadMax1418/Design-by-Ahmad-/blob/main/Leonardo_Phoenix_10_A_sleek_eyecatching_banner_advertisement_s_0.jpg?raw=true" alt="تصميم الإعلانات والبنرات">
-                <h3>تصميم الإعلانات والبنرات</h3>
-                <p>تصميمات إعلانية مبهرة تلفت انتباه جمهورك وتوصل رسالتك بكل وضوح.</p>
+                <a href="service_banners.html">
+                    <img src="https://github.com/AhmadMax1418/Design-by-Ahmad-/blob/main/Leonardo_Phoenix_10_A_modern_dynamic_banner_design_featuring_a_mini_0.jpg?raw=true" alt="تصميم الإعلانات والبنرات">
+                    <h3>تصميم الإعلانات والبنرات</h3>
+                    <p>نحن نقدم إعلانات جذابة لبناء جمهور مستهدف ورفع الوعي بالعلامة التجارية.</p>
+                </a>
             </div>
         </div>
 
-        <!-- نموذج الاتصال -->
-        <footer>
-            <h3>نموذج الاتصال</h3>
-            <form class="contact-form" action="mailto:businessaa19972003@gmail.com" method="POST" enctype="multipart/form-data">
-                <input type="text" name="name" placeholder="الاسم" required>
-                <input type="email" name="email" placeholder="البريد الإلكتروني" required>
-                <textarea name="message" placeholder="رسالتك" required></textarea>
-                <button type="submit">إرسال</button>
-            </form>
-        </footer>
+        <!-- آراء العملاء -->
+        <div class="customer-reviews">
+            <div class="review">
+                <h4>أحمد علي</h4>
+                <p>أروع تصميم، خدمة ممتازة!</p>
+                <div class="stars">⭐⭐⭐⭐⭐</div>
+            </div>
+            <div class="review">
+                <h4>سارة محمد</h4>
+                <p>تصميم مبتكر وجذاب، أضاف الكثير لعلامتي التجارية.</p>
+                <div class="stars">⭐⭐⭐⭐⭐</div>
+            </div>
+            <div class="review">
+                <h4>يوسف أحمد</h4>
+                <p>دقة واحترافية في كل التفاصيل، أنصح بالتعامل معهم.</p>
+                <div class="stars">⭐⭐⭐⭐</div>
+            </div>
+        </div>
 
     </div>
+
+    <!-- نموذج التسجيل -->
+    <div class="contact-form">
+        <h2>اتصل بنا</h2>
+        <form action="mailto:your-email@example.com" method="POST" enctype="text/plain">
+            <label for="name">الاسم</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="phone">رقم الهاتف</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="project">نبذة عن المشروع</label>
+            <textarea id="project" name="project" required></textarea>
+
+            <button type="submit">إرسال</button>
+        </form>
+    </div>
+
+    <!-- التذييل -->
+    <footer>
+        <p>&copy; 2025 تصميم بواسطة فريق التصميمات الاحترافية</p>
+    </footer>
 
 </body>
 </html>
